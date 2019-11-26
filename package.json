@@ -1,0 +1,20 @@
+{
+  "name": "fast-webhook",
+  "version": "1.0.0",
+  "description": "A Github Javascript Action that sends a POST request with an optional JSON body to a webhook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasongitmail/fast-webhook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "superagent": "^5.1.1"
+  }
+}

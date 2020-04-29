@@ -27,7 +27,7 @@ None.
 ## Example usage
 
 ```yaml
-uses: jasongitmail/fast-webhook@master
+uses: jasongitmail/fast-webhook@v1
 with:
   url: ${{ secrets.WEBHOOK_URL }}
   json: '{"foo": "bar"}'

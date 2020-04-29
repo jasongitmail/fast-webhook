@@ -6,7 +6,7 @@ const request = require('superagent');
   let json = core.getInput('json');
 
   if (!url) {
-    core.setFailed(`Missing required parameter: url}`);
+    core.setFailed(`Missing required parameter: url`);
     return;
   }
 

@@ -1,5 +1,8 @@
 name: 'Fast Webhook'
 description: 'A simple, fast-compiling Javascript Github Action to send a POST request with a JSON body'
+branding:
+  icon: 'arrow-right'
+  color: 'green'
 inputs:
   url:
     description: 'The webhook URL to send the request to.'

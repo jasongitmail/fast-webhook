@@ -1,6 +1,6 @@
 {
   "name": "fast-webhook",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Github Javascript Action that sends a POST request with an optional JSON body to a webhook.",
   "main": "index.js",
   "scripts": {

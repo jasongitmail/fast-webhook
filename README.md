@@ -1,8 +1,8 @@
 # fast-webhook
 
-`fast-webhook` is a simple, fast-compiling Javascript Github Action to send a POST request with a JSON body to a URL.
+`fast-webhook` is a simple, fast-compiling, Javascript Github Action to send a POST request with a JSON body to a URL.
 
-It compiles very quickly relative to Docker-based webhooks, which take ~30s, reducing build times.
+It builds very quickly relative to Docker-based actions, which take ~30s, reducing build times.
 
 ## Inputs
 
@@ -16,9 +16,9 @@ The url to send the request to.
 
 **Optional**
 
-The already-stringified json to be sent as the POST body (e.g. `'{"foo":"bar"}'`). Must be provided already stringified because it's not possible pass a JS object via YAML.
+A JSON string to be sent as the POST body (e.g. `'{"foo":"bar"}'`).
 
-If this is not provided, or the value is an empty string, an empty JSON body will be sent (e.g. `'{}'`).
+If this is not provided, or if the value is an empty string, an empty JSON body will be sent (i.e. `'{}'`).
 
 ## Outputs
 

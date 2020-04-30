@@ -1,9 +1,10 @@
 {
   "name": "fast-webhook",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "A Github Javascript Action that sends a POST request with an optional JSON body to a webhook.",
   "main": "index.js",
   "scripts": {
+    "build": "ncc build index.js -o dist"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "dependencies": {
     "@actions/core": "^1.2.3",
     "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1"
   }
 }

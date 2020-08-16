@@ -12,7 +12,6 @@ inputs:
     description: 'The stringified JSON body to be sent, if any.'
     required: false
     default: ''
-outputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'

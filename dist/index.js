@@ -1141,20 +1141,10 @@ const core = __webpack_require__(470);
 const request = __webpack_require__(812);
 
 (async () => {
-  const url = core.getInput('url');
+  const url = core.getInput('url', { required: true });
   let json = core.getInput('json');
 
-  if (!url) {
-    core.setFailed(`Missing required parameter: url`);
-    return;
-  }
-
-  // If not specified or an empty string is given, still proceed.
-  if (!json) {
-    json = {};
-  }
-
-  // Check if JSON is valid and provide as an object to Superagent.
+  let obj;
   try {
     obj = JSON.parse(json);
   } catch (err) {
@@ -1163,9 +1153,7 @@ const request = __webpack_require__(812);
   }
 
   try {
-    const res = await request
-      .post(url)
-      .send(obj);
+    const res = await request.post(url).send(obj);
     if (res.status !== 200) {
       core.setFailed(`Webhook response code was: ${res.status}`);
     }

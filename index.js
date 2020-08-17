@@ -2,13 +2,8 @@ const core = require('@actions/core');
 const request = require('superagent');
 
 (async () => {
-  const url = core.getInput('url');
+  const url = core.getInput('url', { required: true });
   let json = core.getInput('json');
-
-  if (!url) {
-    core.setFailed(`Missing required parameter: url`);
-    return;
-  }
 
   let obj;
   try {

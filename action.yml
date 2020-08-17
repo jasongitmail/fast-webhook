@@ -1,5 +1,7 @@
 name: 'Fast Webhook'
-description: 'A simple, fast-compiling Javascript Github Action to send a POST request with a JSON body'
+description:
+  'A simple, fast-compiling Javascript Github Action to send a POST request with
+  a JSON body'
 branding:
   icon: 'arrow-right'
   color: 'green'
@@ -11,7 +13,7 @@ inputs:
   json:
     description: 'The stringified JSON body to be sent, if any.'
     required: false
-    default: ''
+    default: '{}'
 runs:
   using: 'node12'
   main: 'dist/index.js'

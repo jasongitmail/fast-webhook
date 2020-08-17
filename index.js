@@ -10,12 +10,7 @@ const request = require('superagent');
     return;
   }
 
-  // If not specified or an empty string is given, still proceed.
-  if (!json) {
-    json = {};
-  }
-
-  // Check if JSON is valid and provide as an object to Superagent.
+  let obj;
   try {
     obj = JSON.parse(json);
   } catch (err) {
@@ -24,9 +19,7 @@ const request = require('superagent');
   }
 
   try {
-    const res = await request
-      .post(url)
-      .send(obj);
+    const res = await request.post(url).send(obj);
     if (res.status !== 200) {
       core.setFailed(`Webhook response code was: ${res.status}`);
     }

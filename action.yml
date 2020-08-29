@@ -4,7 +4,7 @@ description:
   a JSON body'
 branding:
   icon: 'arrow-right'
-  color: 'green'
+  color: 'black'
 inputs:
   url:
     description: 'The webhook URL to send the request to.'

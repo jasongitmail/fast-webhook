@@ -5,8 +5,8 @@
   <h1>
     Fast Webhook
     <p>
-      <img src="https://flat.badgen.net/badge/Github/Action/black?icon=github" alt="Github Action">
-      <img src="https://flat.badgen.net/badge/License/MIT/black" alt="MIT license">
+      <img src="https://flat.badgen.net/badge/Github/Action/green?icon=github" alt="Github Action">
+      <img src="https://flat.badgen.net/badge/License/MIT/green" alt="MIT license">
     </p>
   </h1>
 </div>

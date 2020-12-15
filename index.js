@@ -15,7 +15,7 @@ const request = require('superagent');
 
   try {
     const res = await request.post(url).send(obj);
-    if (res.status !== 200) {
+    if (res.status !== 200 || res.status !== 201) {
       core.setFailed(`Webhook response code was: ${res.status}`);
     }
   } catch (error) {
